@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    text-align: center;
+}
+
+#leftwheel,#rightwheel{
+    animation: wheel 2s  infinite linear;
+    transform-origin: center;
+    transform-box: fill-box; ;
+}
+
+#pin1,#pin2{
+
+    animation: pin 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#bikerbody{
+    animation:bike 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+
+}
+#giftbox{
+    animation:bike 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+
+}
+
+#hair{
+    animation:hair 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box; ;
+}
+@keyframes wheel{
+    from { 
+        transform:rotateZ(0deg);
+    }
+    to {
+        transform:rotateZ(360deg);
+    }
+}
+@keyframes pin{
+    from { 
+        transform:rotatex(0deg);
+    }
+    to{
+        transform:rotatex(20deg);
+    }
+}
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(25deg);
+    }
+}
+
+@keyframes gift{
+    from{
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(25deg);
+    }
+
+}
+@keyframes hair{
+    from{
+        transform:translateY(0%) rotateZ(0deg);
+    }
+    to {
+        transform:translateY(40%) rotateZ(20deg);
+    }
+}
+
+
+@media all and (max-width:800px){
+    svg{
+        width: 340px;
+        height:230px;
+    }
+
+}
